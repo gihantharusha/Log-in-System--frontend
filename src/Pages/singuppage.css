@@ -1,0 +1,67 @@
+/* singup-oage */
+
+.singup-page{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* first-section */
+
+.first-section{
+    width: 100%;
+    text-align: center;
+}
+
+/* second-section */
+
+.second-section{
+    display: flex;
+    flex-wrap: wrap;
+    background: black;
+    padding: 4rem 1rem;
+    width: 60%;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.second-section a{
+    color: white;
+    text-decoration: none;
+}
+
+
+/* sub-section */
+
+.second-section .sub-section{
+    display: flex;
+    justify-content: center;
+    width: 100%
+}
+
+.second-section button{
+    width: 30%;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background: rgb(1, 245, 225);
+}
+
+
+/* input-section */
+
+.input-section{
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+    
+}
+
+.input-section input{
+    width: 70%;
+    font-size: 23px;
+}

@@ -1,0 +1,32 @@
+/* users-page */
+
+.users-page ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    list-style: none;
+}
+
+.users-page ul li{
+    border: 2px solid black;
+    padding: 2rem;
+    border-radius: 10px;
+    background: darkblue;
+    color: white;
+}
+
+/* button-section */
+
+
+.users-page ul li .button-section{
+    display: flex;
+    gap: 10px;
+}
+
+.users-page ul li .button-section button{
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
