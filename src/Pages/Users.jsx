@@ -8,7 +8,7 @@ const Users = () => {
   
 
   useEffect(() => {
-    axios.get("http://localhost:5000/getUsers").then((res) => {
+    axios.get("https://log-in-system-backend.onrender.com/getUsers").then((res) => {
       console.log(res);
       setUsers(res.data);
     });
@@ -16,7 +16,7 @@ const Users = () => {
 
   const deleteUser = (id) => {
     console.log(id)
-    axios.post(`http://localhost:5000/delUsers?id=${id}`);
+    axios.post(`https://log-in-system-backend.onrender.com/delUsers?id=${id}`);
     if(refresh === 1){
       setRefresh(2)
     }else if(refresh===2){
@@ -29,7 +29,7 @@ const Users = () => {
     const name = prompt("Enter your new name")
     const pass = prompt("Enter your new passwors")
     
-    axios.post(`http://localhost:5000/updateUsers?id=${id}&name=${name}&pass=${pass}`)
+    axios.post(`https://log-in-system-backend.onrender.com/updateUsers?id=${id}&name=${name}&pass=${pass}`)
     if(refresh === 1){
       setRefresh(2)
     }else if(refresh===2){

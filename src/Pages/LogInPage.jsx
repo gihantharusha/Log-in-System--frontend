@@ -10,7 +10,7 @@ const LogInPage = () => {
   
 
   const submit = ()=>{
-    axios.get(`http://localhost:5000/findUserName?name=${name}&pass=${pass}`)
+    axios.get(`https://log-in-system-backend.onrender.com/findUserName?name=${name}&pass=${pass}`)
     .then(res=>{
       if(res.data === "find user name"){
         

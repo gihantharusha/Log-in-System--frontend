@@ -9,7 +9,7 @@ const LogInPage = () => {
   const [uPass, setUPass] = useState();
 
   const submit = () => {
-    axios.post(`http://localhost:5000/addUsers?name=${uName}&pass=${uPass}`);
+    axios.post(`https://log-in-system-backend.onrender.com/addUsers?name=${uName}&pass=${uPass}`);
   };
 
   return (
